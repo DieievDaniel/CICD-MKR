@@ -1,8 +1,8 @@
-def get_price_change(product_name):
+def get_price_change(product_name, filename):
     import datetime
 
     # Відкриваємо файл з даними про товари
-    with open('data.txt', 'r') as file:
+    with open(filename, 'r') as file:
         # Читаємо кожний рядок файла
         lines = file.readlines()
 
